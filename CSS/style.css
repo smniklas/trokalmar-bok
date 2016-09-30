@@ -1,0 +1,57 @@
+html{
+  margin:0;
+}
+body{
+  margin:0;
+}
+.menu-left{
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #6C7A89;
+  width:12%;
+  height:100%;
+  border-right-width: 2px;
+  border-right-color: white;
+  border-right-style: solid;
+}
+.book-left{
+  position: absolute;
+  top:0;
+  left:12%;
+  height:100%;
+  width:38%;
+  background-color: #446CB3;
+}
+.menu-right{
+  position: absolute;
+  top:0;
+  right:0;
+  height:100%;
+  width:12%;
+  background-color: #6C7A89;
+  border-left-width: 2px;
+  border-left-color: white;
+  border-left-style: solid;
+}
+.book-right{
+  position: absolute;
+  top:0;
+  right:12%;
+  background-color: #03C9A9;
+  width:38%;
+  height:100%;
+}
+.menu-title{
+  margin:0;
+}
+.general-div-style{
+  height:25%;
+  width:100%;
+}
+.div-menu-color-one{
+  background-color: #663399;
+}
+.div-menu-color-two{
+  background-color: #674172;  
+}
