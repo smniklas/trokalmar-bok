@@ -11,9 +11,6 @@ body{
   background-color: #6C7A89;
   width:12%;
   height:100%;
-  border-right-width: 2px;
-  border-right-color: white;
-  border-right-style: solid;
 }
 .book-left{
   position: absolute;
@@ -21,7 +18,11 @@ body{
   left:12%;
   height:100%;
   width:38%;
-  background-color: #446CB3;
+  background-color: #6C7A89;
+  -webkit-perspective:2000px;
+  -moz-perspective:2000px;
+  -o-perspective:2000px;
+  perspective:2000px;
 }
 .menu-right{
   position: absolute;
@@ -29,29 +30,139 @@ body{
   right:0;
   height:100%;
   width:12%;
-  background-color: #6C7A89;
-  border-left-width: 2px;
-  border-left-color: white;
-  border-left-style: solid;
 }
 .book-right{
   position: absolute;
   top:0;
   right:12%;
-  background-color: #03C9A9;
+  background-color: #95A5A6;
   width:38%;
   height:100%;
+  -webkit-perspective:2000px;
+  -moz-perspective:2000px;
+  -o-perspective:2000px;
+  perspective:2000px;
 }
 .menu-title{
+  position: relative;
+  left: 0%;
+  top: 50%;
+  transform: translate(0%,-50%);
   margin:0;
+  font-size:25px;
 }
 .general-div-style{
   height:25%;
   width:100%;
+  text-align: center;
 }
 .div-menu-color-one{
   background-color: #663399;
 }
 .div-menu-color-two{
   background-color: #674172;  
+}
+.center-logo{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-49%,-50%);
+    z-index: 10;
+}
+
+/*Animations */
+
+.card-left{
+  margin:0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;    
+  -ms-transform-origin: 50% 50%;    
+  -o-transform-origin: 50% 50%;    
+  transform-origin: 50% 50%;    
+}
+.card-left section{
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #212121;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;    
+}
+.card-left .front-left{
+  background-color:#E9D460;
+}
+.card-left .back-left{
+  background: #ECECEC;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );   
+}
+.card-left.flipped{
+  -webkit-transform: rotateY( -180deg );
+  -moz-transform: rotateY( -180deg );
+  -o-transform: rotateY( -180deg );
+  transform: rotateY( -180deg );   
+}
+
+
+.card-right{
+  margin:0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;    
+  -ms-transform-origin: 50% 50%;    
+  -o-transform-origin: 50% 50%;    
+  transform-origin: 50% 50%;    
+}
+.card-right section{
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #212121;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;    
+}
+.card-right .front-right{
+  background-color:#E9D460;
+}
+.card-right .back-right{
+  background: #ECECEC;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );   
+}
+.card-right.flipped{
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );   
 }
