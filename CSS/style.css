@@ -45,11 +45,14 @@ body{
 }
 .menu-title{
   position: relative;
+  display:block;
   left: 0%;
   top: 50%;
   transform: translate(0%,-50%);
   margin:0;
   font-size:25px;
+  height:100%;
+  width:100%;
 }
 .general-div-style{
   height:25%;
@@ -103,10 +106,10 @@ body{
   backface-visibility: hidden;    
 }
 .card-left .front-left{
-  background-color:#E9D460;
+  background-color:#A2DED0;
 }
 .card-left .back-left{
-  background: #ECECEC;
+  background: #F8ECC2;
   -webkit-transform: rotateY( 180deg );
   -moz-transform: rotateY( 180deg );
   -o-transform: rotateY( 180deg );
@@ -151,10 +154,10 @@ body{
   backface-visibility: hidden;    
 }
 .card-right .front-right{
-  background-color:#E9D460;
+  background-color:#A2DED0;
 }
 .card-right .back-right{
-  background: #ECECEC;
+  background: #F8ECC2;
   -webkit-transform: rotateY( 180deg );
   -moz-transform: rotateY( 180deg );
   -o-transform: rotateY( 180deg );
