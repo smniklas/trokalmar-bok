@@ -6,7 +6,6 @@
     switch(x){
         default:
         break;
-        
         case "hem":
             $(".hem").addClass("disable_a_href");
             break;
@@ -29,8 +28,16 @@
             $(".aktiviteter").addClass("disable_a_href");
             break;
     }
-    // $('.home-page').click(function(){
-    //   $('.card-page').toggleClass('flipped');
-    // });
+    
+    $("a").click(function(e){
+        e.preventDefault();
+        var goTo = this.getAttribute("href");
+        console.log(goTo);
+        $('.card-page').toggleClass('flipped');
+        setTimeout(function(){
+            window.location = goTo;
+        },800);
+    });
+    
   }); // end of document readys
 })(jQuery); // end of jQuery name space

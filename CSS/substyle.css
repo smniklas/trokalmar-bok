@@ -1,5 +1,6 @@
 .book-page{
   position: absolute;
+  overflow-y:auto;
   top:0;
   left:12%;
   height:100%;
