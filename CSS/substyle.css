@@ -58,7 +58,29 @@
   transform: rotateY( -180deg );      
 }
 
+.front-page h3{
+  text-align: center;
+}
+.link-p{
+  position: absolute;
+  margin:0;
+  color:black;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
 .disable_a_href{
     pointer-events: none;
     color:#c0c0c0 !important;
+}
+.fade-text{
+  display:none;
+}
+.page-logo{
+  position: absolute;
+  left:1%;
+  top:1%;
+}
+a:hover{
+  background-color: #BE90D4;
 }

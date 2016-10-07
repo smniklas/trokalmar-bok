@@ -8,24 +8,31 @@
         break;
         case "hem":
             $(".hem").addClass("disable_a_href");
+            $(".fade-text").fadeIn(800);
             break;
         case "historik":
             $(".historik").addClass("disable_a_href");
+            $(".fade-text").fadeIn(800);
             break;
         case "motesplats":
             $(".motesplats").addClass("disable_a_href");
+            $(".fade-text").fadeIn(800);
             break;
         case "masterrad":
             $(".masterad").addClass("disable_a_href");
+            $(".fade-text").fadeIn(800);
             break;
         case "lokaler":
             $(".lokaler").addClass("disable_a_href");
+            $(".fade-text").fadeIn(800);
             break;
         case "kontakt":
             $(".kontakt").addClass("disable_a_href");
+            $(".fade-text").fadeIn(800);
             break;
         case "aktiviteter":
             $(".aktiviteter").addClass("disable_a_href");
+            $(".fade-text").fadeIn(800);
             break;
     }
     
